@@ -1,0 +1,36 @@
+gruvbox palette
+---------------
+the listed first color is the normal color, the second is intense.
+
+color 0 (bg/fg)
+#282828
+#928374
+
+color 1 (red)
+#CC241D
+#FB4934
+
+color 2 (green)
+#98971A
+#B8BB26
+
+color 3 (orange)
+#D79921
+#FABD2F
+
+color 4 (blue)
+#458588
+#83A598
+
+color 5 (purple)
+#B16286
+#D3869B
+
+color 6 (mint)
+#689D6A
+#8EC07C
+
+fg/fg intense
+#A89984
+
+
