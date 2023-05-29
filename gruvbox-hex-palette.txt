@@ -1,6 +1,7 @@
-gruvbox palette
----------------
-the listed first color is the normal color, the second is intense.
+GRUVBOX HEX COLOR PALETTE
+-------------------------
+The listed first color is the normal color, the second is intense.
+I inputted the hex colors in the exact order of the terminal preferences using Gnome-Tweaks.
 
 color 0 (bg/fg)
 #282828
@@ -32,5 +33,3 @@ color 6 (mint)
 
 fg/fg intense
 #A89984
-
-
