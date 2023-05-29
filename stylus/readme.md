@@ -7,6 +7,8 @@ The Stylus extension can be downloaded in the places listed below. Personally, I
 
 [Chrome Extension Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Thank you to Xedecimal for the Stylus userstyles. I am uploading a copy of each .css file to this repository for redundancy, but will link the original repo below:
+Thank you to [Xedecimal](https://github.com/Xedecimal/) for the bulk of the userstyles. I am uploading a copy of each .css file to this repository for redundancy, but will link the original repo below:
 
 [xedecimal's repo](https://github.com/Xedecimal/userstyles)
+
+Also thanks to [Jonatan](https://github.com/dotMavriQ) for the Proton Mail theme.
