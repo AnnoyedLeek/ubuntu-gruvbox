@@ -1,0 +1,141 @@
+/* ==UserStyle==
+@name           GruvBox - Youtube
+@namespace      github.com/Xedecimal/userstyles
+@version        1.0.5
+@description    Youtube... Gruvbox style.
+@preprocessor   stylus
+@author         Xedecimal
+@license        WTFPL
+@updateURL      https://raw.githubusercontent.com/Xedecimal/userstyles/master/gruvbox-youtube.user.styl
+@homepageURL    https://github.com/Xedecimal/userstyles
+@var color color-text           "Text"                  #BDAE93
+@var color color-text-dark      "Text Dark"             #A89984
+@var color color-text-light     "Text Light"            #FBF1C7
+@var color color-back           "Background"            #282828
+@var color color-back-dark      "Background Dark"       #1D2021
+@var color color-back-light     "Background Bright"     #3C3836
+@var color color-highlight      "Highlight"             #FB4934
+@var color color-notification   "Notification"          #B8BB26
+
+==/UserStyle== */
+
+@-moz-document domain("youtube.com")
+    body()
+        color: color-text
+        background: color-back
+
+    card()
+        color: color-text-dark
+        background: color-back-dark
+        
+    card-title()
+        color: color-text-light
+
+    channel-banner()
+        background: none
+
+    comment-text()
+        body()
+            
+    comment-author()
+        link()
+
+    title()
+        color: color-text
+        
+    title-sub()
+        color: color-text-dark
+
+    icon()
+        color: color-text-light
+        
+    link()
+        color: color-text-light
+        
+    link-active()
+        color: color-notification
+    
+    link-left()
+        link()
+
+    link-visited()
+        color: color-text
+
+    logo-text()
+        fill: color-text
+        
+    placeholder()
+        color: color-text-dark
+        
+    search()
+        background: color-back-dark
+        border: none
+        box-shadow: none
+        
+    search-icon()
+        color: #f0f
+        background: color-back-light
+        border: none
+
+    video-title()
+        link()
+            
+    video-summary()
+        body()
+
+    body, ytd-app, ytd-masthead, #guide-content.ytd-app, #columns.ytd-watch-flexy, ytd-browse[page-subtype="channels"], .content.ytd-video-secondary-info-renderer, ytd-app[is-watch-page], ytd-watch-flexy
+        body()
+
+    #metadata-line.ytd-grid-video-renderer, #byline.ytd-video-meta-block
+        video-summary()
+
+    ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer, #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer, #video-title.ytd-video-renderer
+        video-title()
+
+    a, h3.ytd-compact-video-renderer, .more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer, .title.ytd-guide-entry-renderer
+        link()
+            
+    ytd-guide-entry-renderer[is-guide-refresh][is-primary][active] .title.ytd-guide-entry-renderer
+        link-active()
+            
+    ytd-guide-entry-renderer[is-guide-refresh][is-primary] .title.ytd-guide-entry-renderer, ytd-guide-entry-renderer[is-guide-refresh] #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer
+        link-left()
+
+    #title.ytd-shelf-renderer, .title.ytd-video-primary-info-renderer, #upnext.ytd-compact-autoplay-renderer, yt-formatted-string.ytd-comments-header-renderer, #channel-title.ytd-c4-tabbed-header-renderer
+        title()
+
+    .date.ytd-video-secondary-info-renderer, #more-text.ytd-comment-replies-renderer, #less-text.ytd-comment-replies-renderer
+        title-sub()
+        
+    #channel-container.ytd-c4-tabbed-header-renderer, #tabs-container.ytd-c4-tabbed-header-renderer, #channel-header.ytd-c4-tabbed-header-renderer, #tabs-inner-container.ytd-c4-tabbed-header-renderer
+        channel-banner()
+
+    yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string
+        link-visited()
+        
+    ytd-post-renderer[surface_="backstage-surface-type-home"], ytd-post-renderer[surface_="backstage-surface-type-home"] #home-content-text.ytd-post-renderer
+        card()
+
+    ytd-post-renderer[surface_="backstage-surface-type-home"] #author-text.yt-simple-endpoint.ytd-post-renderer
+        card-title()
+        
+    #content-text.ytd-comment-renderer
+        comment-text()
+        
+    #author-text.yt-simple-endpoint.ytd-comment-renderer
+        comment-author()
+        
+    #logo-red-icon-container.ytd-topbar-logo-renderer #youtube-red-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
+        logo-text()
+        
+    ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox
+        search()
+        
+    #search-icon-legacy.ytd-searchbox
+        search-icon()
+
+    .yt-icon
+        icon()
+
+    #simplebox-placeholder.ytd-comment-simplebox-renderer
+        placeholder()
